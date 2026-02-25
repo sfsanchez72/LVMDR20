@@ -1,8 +1,0 @@
-NGCname,names,cexpnum,ra,dec,pa,radius,exptime,location,type
-NGC6523,"M8 | Lagoon Nebula",41424,271.11953,-24.39238,179.3693,120,30.,"MW","HII region"
-NGC6514,"M20 | Triffid Nebula",15922,270.64456,-22.93754,119.4349,10,30.,"MW","HII region"
-NGC1976,"M42 | Orion Nebula",10153,83.7879,-5.53195,242.3231,120,10.,"MW","HII region"
-NGC7293,"Helix Nebula ",4297,337.4107,-20.83721,178.6492,1,900.,"MW","PN"
-NGC4945,"Caldwell 83",12312,196.35877,-49.47458,179.9015,10,900.,"LV","Galaxy"
-NMGC598,"M33 | Triangulum Galaxy",5513,23.3982,30.54882,179.8685,60,900.,"LV","Galaxy"
-
