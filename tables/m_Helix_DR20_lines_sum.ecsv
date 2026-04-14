@@ -1,0 +1,61 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: eline, datatype: string}
+# schema: astropy-2.0
+eline
+flux_[OII]_3726.03
+flux_[OII]_3728.82
+flux_[NeIII]_3868.75
+flux_HeI_3888.65
+flux_HI_3889.05
+flux_HeI_3964.73
+flux_[NeIII]_3967.46
+flux_CaII_3968.47
+flux_Hepsilon_3970.07
+flux_Hdelta_4101.77
+flux_Hgamma_4340.49
+flux_[OIII]_4363.21
+flux_[FeII]_4470.29
+flux_HeI_4471.48
+flux_HeII_4685.68
+flux_[ArIV]_4711.33
+flux_HeI_4713.14
+flux_Hbeta_4861.36
+flux_[FeIII]_4930.5
+flux_[OIII]_4958.91
+flux_[OIII]_5006.84
+flux_[NI]_5197.9
+flux_[NI]_5200.26
+flux_[OI]_5577.34
+flux_[NII]_5754.59
+flux_HeI_5876.0
+flux_NaI_5889.95
+flux_[OI]_6300.3
+flux_[OI]_6363.78
+flux_[NII]_6548.05
+flux_Halpha_6562.85
+flux_[NII]_6583.45
+flux_HeI_6678.15
+flux_[SII]_6716.44
+flux_[SII]_6730.82
+flux_HeI_7065.19
+flux_[ArIII]_7135.8
+flux_[OII]_7318.92
+flux_[CaII]_7323.88
+flux_[OII]_7329.66
+flux_[ArIII]_7751.06
+flux_OI_7774.0
+flux_[FeXI]_7891.8
+flux_HI_8264.92
+flux_HI_8268.57
+flux_HI_8359.0
+flux_CaII_8662.14
+flux_HI_8665.02
+flux_HI_8750.47
+flux_HI_9014.91
+flux_[SIII]_9069.0
+flux_[FeII]_9226.6
+flux_HI_9229.02
+flux_[SIII]_9531.1
+flux_HI_9545.97

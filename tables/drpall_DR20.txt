@@ -1,0 +1,85 @@
+The file drpall_DR20.fits is a summary table produced by the LVM Data
+Reduction Pipeline (DRP) that compiles observational, instrumental,
+and processing metadata for each science exposure included in DR20;
+each row corresponds to an individual exposure (identified by tileid,
+mjd, and expnum) and contains detailed information on telescope
+pointing, observing conditions, and instrument configuration for the
+science field (SCI) and associated sky fields (SKYE and SKYW),
+including astrometry, airmass, altitude, focus metrics, and angular
+separations from the Moon, as well as lunar and solar conditions at
+the time of observation; in addition, it records pipeline-related
+information such as reduction stage, processing status, quality flags,
+DRP version, calibration references, and file locations, thereby
+providing a comprehensive master catalog to track data provenance,
+assess data quality, and enable the selection and filtering of LVM
+DR20 observations for scientific analysis.
+
+# COLUMN1:  tilegrp, string, , Tile group identifier
+# COLUMN2:  tileid, int, , Unique tile identifier
+# COLUMN3:  mjd, int, , Modified Julian Date of the observation
+# COLUMN4:  expnum, int, , Exposure number within the observing sequence
+# COLUMN5:  exptime, float, seconds, Exposure time
+# COLUMN6:  stage, int, , Reduction stage identifier
+# COLUMN7:  status, int, , Processing status flag
+# COLUMN8:  drpqual, int, , DRP quality flag
+# COLUMN9:  drpver, string, , Version of the DRP used
+# COLUMN10: dpos, int, , Dither position index
+# COLUMN11: object, string, , Object or field name
+# COLUMN12: obstime, string, , Observation timestamp
+# --- Science field (SCI) ---
+# COLUMN13: sci_ra, float, degree, Right Ascension of science pointing
+# COLUMN14: sci_dec, float, degree, Declination of science pointing
+# COLUMN15: sci_pa, float, degree, Position angle of science field
+# COLUMN16: sci_amass, float, , Airmass of science exposure
+# COLUMN17: sci_kmpos, float, , KM mirror position
+# COLUMN18: sci_focpos, float, , Focus position
+# COLUMN19: sci_alt, float, degree, Altitude of science pointing
+# COLUMN20: sci_sh_hght, float, , Shack-Hartmann height or similar focus metric
+# COLUMN21: sci_moon_sep, float, degree, Angular separation to the Moon
+# --- East sky field (SKYE) ---
+# COLUMN22: skye_ra, float, degree, RA of eastern sky field
+# COLUMN23: skye_dec, float, degree, DEC of eastern sky field
+# COLUMN24: skye_pa, float, degree, Position angle of sky field
+# COLUMN25: skye_amass, float, , Airmass of sky field
+# COLUMN26: skye_kmpos, float, , KM mirror position for sky
+# COLUMN27: skye_focpos, float, , Focus position for sky
+# COLUMN28: skye_name, string, , Identifier of sky field
+# COLUMN29: skye_alt, float, degree, Altitude of sky field
+# COLUMN30: sci_skye_sep, float, degree, Separation SCI–SKYE
+# COLUMN31: skye_sh_hght, float, , Focus metric for sky field
+# COLUMN32: skye_moon_sep, float, degree, Separation sky–Moon
+# --- West sky field (SKYW) ---
+# COLUMN33: skyw_ra, float, degree, RA of western sky field
+# COLUMN34: skyw_dec, float, degree, DEC of western sky field
+# COLUMN35: skyw_pa, float, degree, Position angle of sky field
+# COLUMN36: skyw_amass, float, , Airmass of sky field
+# COLUMN37: skyw_kmpos, float, , KM mirror position for sky
+# COLUMN38: skyw_focpos, float, , Focus position for sky
+# COLUMN39: skyw_name, string, , Identifier of sky field
+# COLUMN40: skyw_alt, float, degree, Altitude of sky field
+# COLUMN41: sci_skyw_sep, float, degree, Separation SCI–SKYW
+# COLUMN42: skyw_sh_hght, float, , Focus metric for sky field
+# COLUMN43: skyw_moon_sep, float, degree, Separation sky–Moon
+# --- Moon / Sun conditions ---
+# COLUMN44: moon_ra, float, degree, RA of the Moon
+# COLUMN45: moon_dec, float, degree, DEC of the Moon
+# COLUMN46: moon_phase, float, , Moon phase (fraction illuminated)
+# COLUMN47: moon_fli, float, , Fractional lunar illumination
+# COLUMN48: sun_alt, float, degree, Altitude of the Sun
+# COLUMN49: moon_alt, float, degree, Altitude of the Moon
+# --- File and calibration metadata ---
+# COLUMN50: filename, string, , Name of the reduced file
+# COLUMN51: location, string, , File system location
+# COLUMN52: agcam_location, string, , Acquisition camera data location
+# COLUMN53: calib_mjd, int, , Calibration MJD used
+# --- Target reference coordinates ---
+# COLUMN54: ra, float, degree, Reference RA of the target
+# COLUMN55: dec, float, degree, Reference DEC of the target
+# COLUMN56: pa, float, degree, Reference position angle
+# --- Object identification ---
+# COLUMN57: NGCname, string, , NGC identifier if available
+# --- Coordinate systems ---
+# COLUMN58: ra_icrs, float, degree, RA in ICRS frame
+# COLUMN59: dec_icrs, float, degree, DEC in ICRS frame
+# COLUMN60: ra_g, float, degree, Galactic longitude
+# COLUMN61: dec_g, float, degree, Galactic latitude
