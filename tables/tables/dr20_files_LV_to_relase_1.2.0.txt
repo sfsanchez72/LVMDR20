@@ -1,0 +1,9 @@
+scp -P 7970 LV_dap_v1.2.0/LV_dap-rsp108-sn20-00005511.dap.fits.gz sanchez@ifs.astroscu.unam.mx:/mnt/NASfilemon/LVM/sdsswork/analysis/LVMDAP/1.2.0/0011XX/11111/60212/00005511/
+scp -P 7970 LV_dap_v1.2.0/LV_dap-rsp108-sn20-00005512.dap.fits.gz sanchez@ifs.astroscu.unam.mx:/mnt/NASfilemon/LVM/sdsswork/analysis/LVMDAP/1.2.0/0011XX/11111/60212/00005512/
+scp -P 7970 LV_dap_v1.2.0/LV_dap-rsp108-sn20-00012183.dap.fits.gz sanchez@ifs.astroscu.unam.mx:/mnt/NASfilemon/LVM/sdsswork/analysis/LVMDAP/1.2.0/1056XX/1056242/60349/00012183/
+
+scp -P 7970 LV_dap_v1.2.0/LV_dap-rsp108-sn20-00005511.output.fits.gz sanchez@ifs.astroscu.unam.mx:/mnt/NASfilemon/LVM/sdsswork/analysis/LVMDAP/1.2.0/0011XX/11111/60212/00005511/
+scp -P 7970 LV_dap_v1.2.0/LV_dap-rsp108-sn20-00005512.output.fits.gz sanchez@ifs.astroscu.unam.mx:/mnt/NASfilemon/LVM/sdsswork/analysis/LVMDAP/1.2.0/0011XX/11111/60212/00005512/
+scp -P 7970 LV_dap_v1.2.0/LV_dap-rsp108-sn20-00012183.output.fits.gz sanchez@ifs.astroscu.unam.mx:/mnt/NASfilemon/LVM/sdsswork/analysis/LVMDAP/1.2.0/1056XX/1056242/60349/00012183/
+
+

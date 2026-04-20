@@ -1,0 +1,117 @@
+# DAPALL DR20 Summary Table
+
+## Metadata
+
+- **AUTHOR:** S.F. Sanchez  
+- **SOURCE:** LVM DR20 DAP summary table (Pipe3D-like analysis)  
+- **DATE:** 2026-XX-XX  
+- **VERSION:** DR20 v1.2.0  
+- **COLAPRV:** S.F. Sanchez  
+- **PUBAPRV:**  
+
+---
+
+## Description
+
+The file `dapall_DR20.fits` is a value-added catalog produced from the analysis of LVM DR20 data using a Pipe3D-like Data Analysis Pipeline (DAP), in which each row corresponds to an individual exposure (identified by `tileid`, `mjd`, and `expnum`) and contains integrated physical properties derived from the stellar continuum fitting and emission-line measurements of the observed spectra; the table combines basic observational metadata (position and exposure information) with stellar population parameters (effective temperature, surface gravity, metallicity, alpha-enhancement, extinction, velocity dispersion, systemic velocity, and fit quality metrics) and flux measurements of key emission lines across the optical and near-infrared range (including Balmer lines, [O II], [O III], [N II], [S II], and [S III]), together with their associated uncertainties, providing a compact representation of both stellar and ionized gas properties suitable for statistical analysis, source classification, and quick-look science without requiring direct access to the full spectral data products.
+
+---
+
+## Columns
+
+### General Information
+
+| Column | Name | Type | Units | Description |
+|--------|------|------|-------|-------------|
+| 1 | tilegrp | string | | Tile group identifier |
+| 2 | tileid | int | | Unique tile identifier |
+| 3 | mjd | int | | Modified Julian Date of the observation |
+| 4 | expnum | int | | Exposure number |
+| 5 | exptime | float | seconds | Exposure time |
+| 6 | dapfile | string | | Name of the associated DAP output file |
+
+---
+
+### Astrometry
+
+| Column | Name | Type | Units | Description |
+|--------|------|------|-------|-------------|
+| 7 | ra | float | degree | Right Ascension of the target |
+| 8 | dec | float | degree | Declination of the target |
+
+---
+
+### Stellar Population Properties
+
+| Column | Name | Type | Units | Description |
+|--------|------|------|-------|-------------|
+| 9 | Teff | float | | Effective temperature |
+| 10 | e_Teff | float | | Uncertainty in effective temperature |
+| 11 | Log_g | float | | Surface gravity (log g) |
+| 12 | e_Log_g | float | | Uncertainty in surface gravity |
+| 13 | Fe | float | | Stellar metallicity ([Fe/H]) |
+| 14 | e_Fe | float | | Uncertainty in metallicity |
+| 15 | alpha | float | | Alpha-element enhancement |
+| 16 | e_alpha | float | | Uncertainty in alpha enhancement |
+| 17 | Av_st | float | mag | Stellar extinction |
+| 18 | e_Av_st | float | mag | Uncertainty in stellar extinction |
+| 19 | z_st | float | | Stellar redshift |
+| 20 | e_z_st | float | | Uncertainty in stellar redshift |
+| 21 | disp_st | float | km/s | Stellar velocity dispersion |
+| 22 | e_disp_st | float | km/s | Uncertainty in velocity dispersion |
+| 23 | flux_st | float | | Integrated stellar flux |
+| 24 | redshift_st | float | | Adopted stellar redshift |
+| 25 | med_flux_st | float | | Median stellar flux |
+| 26 | e_med_flux_st | float | | Uncertainty in median flux |
+| 27 | vel_st | float | km/s | Stellar velocity |
+| 28 | X_sq_st | float | | Chi-square of stellar fit |
+| 29 | X_sq_st_np | float | | Chi-square (non-parametric fit) |
+| 30 | X_sq_st_pek | float | | Chi-square for emission-line masked fit |
+
+---
+
+### Emission Line Fluxes (Parametric Fits)
+
+| Column | Name | Type | Units | Description |
+|--------|------|------|-------|-------------|
+| 31 | flux_pek_3726.03 | float | | [OII] 3726 flux |
+| 32 | e_flux_pek_3726.03 | float | | Uncertainty |
+| 33 | flux_pek_3728.82 | float | | [OII] 3729 flux |
+| 34 | e_flux_pek_3728.82 | float | | Uncertainty |
+| 35 | flux_pek_4101.77 | float | | Hδ flux |
+| 36 | e_flux_pek_4101.77 | float | | Uncertainty |
+| 37 | flux_pek_4340.49 | float | | Hγ flux |
+| 38 | e_flux_pek_4340.49 | float | | Uncertainty |
+| 39 | flux_pek_4861.36 | float | | Hβ flux |
+| 40 | e_flux_pek_4861.36 | float | | Uncertainty |
+| 41 | flux_pek_4958.91 | float | | [OIII] 4959 flux |
+| 42 | e_flux_pek_4958.91 | float | | Uncertainty |
+| 43 | flux_pek_5006.84 | float | | [OIII] 5007 flux |
+| 44 | e_flux_pek_5006.84 | float | | Uncertainty |
+| 45 | flux_pek_6300.3 | float | | [OI] 6300 flux |
+| 46 | e_flux_pek_6300.3 | float | | Uncertainty |
+| 47 | flux_pek_6548.05 | float | | [NII] 6548 flux |
+| 48 | e_flux_pek_6548.05 | float | | Uncertainty |
+| 49 | flux_pek_6562.85 | float | | Hα flux |
+| 50 | e_flux_pek_6562.85 | float | | Uncertainty |
+| 51 | flux_pek_6583.45 | float | | [NII] 6583 flux |
+| 52 | e_flux_pek_6583.45 | float | | Uncertainty |
+| 53 | flux_pek_6716.44 | float | | [SII] 6716 flux |
+| 54 | e_flux_pek_6716.44 | float | | Uncertainty |
+| 55 | flux_pek_6730.82 | float | | [SII] 6731 flux |
+| 56 | e_flux_pek_6730.82 | float | | Uncertainty |
+| 57 | flux_pek_9069.0 | float | | [SIII] 9069 flux |
+| 58 | e_flux_pek_9069.0 | float | | Uncertainty |
+| 59 | flux_pek_9531.1 | float | | [SIII] 9531 flux |
+| 60 | e_flux_pek_9531.1 | float | | Uncertainty |
+
+---
+
+## Notes
+
+- This table represents **average spectral properties per exposure**.
+- Emission-line fluxes correspond to **parametric fits (pek)**.
+- Suitable for:
+  - emission-line diagnostics (e.g., BPT diagrams)
+  - stellar population studies
+  - quick-look science analysis
